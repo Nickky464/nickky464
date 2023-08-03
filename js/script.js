@@ -55,7 +55,7 @@ ScrollReveal({
 ScrollReveal().reveal('.home-content, .heading', { origin: 'bottom' });
 ScrollReveal().reveal('.home-img, .skills-box, .btn, .social-media a, .about-img, .contact form p, .portfolio-box, .contact form, .contact-info-box a', { interval: 200, origin: 'bottom' });
 ScrollReveal().reveal('.about-content h2', { interval: 200, origin: 'top' });
-ScrollReveal().reveal('.home-content h1', { origin: 'left' });
+ScrollReveal().reveal('.home-content h1, .about_content p', { origin: 'left' });
 
 /*=============== ParticlesJS ===============*/
 particlesJS.load("particles-js", "js/particles-js/particles.json");
