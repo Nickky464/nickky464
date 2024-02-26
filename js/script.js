@@ -1,13 +1,11 @@
-
 // Typed Effect
 const typed = new Typed(".multiple-text-type", {
-    strings: ["Fontend Developer", "Backend Developer"],
-    typeSpeed: 90,
+    strings: ["โรงเรียนสันกำแพง"],
+    typeSpeed: 130,
     backSpeed: 90,
     backDelay: 1000,
-    loop: true
-
-});
+    loop: false
+  });
 
 /*=============== toggle icon navbar ===============*/
 let menuIcon = document.querySelector('#menu-icon');
@@ -49,11 +47,15 @@ window.onscroll = () => {
 
 /*=============== scroll reveal ===============*/
 ScrollReveal({
-    // reset: true,
-    distance: '80px',
-    duration: 2000,
-    delay: 400,
+    reset: false,
+    distance: '100px',
+    duration: 1500,
+    delay: 300
 });
-ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .skills-box, .btn, .social-media a, .about-img, .contact form p, .portfolio-box, .contact form', { interval: 200, origin: 'bottom' });
-ScrollReveal().reveal('.home-content h1, .about, .contact-info-container', { origin: 'left' });
+ScrollReveal().reveal('.home-content, .heading', { origin: 'bottom' });
+ScrollReveal().reveal('.home-img, .skills-box, .btn, .social-media a, .about-img, .contact form p, .portfolio-box, .contact form, .contact-info-box a', { interval: 200, origin: 'bottom' });
+ScrollReveal().reveal('.about-content h2', { interval: 200, origin: 'top' });
+ScrollReveal().reveal('.home-content h1', { origin: 'left' });
+
+/*=============== ParticlesJS ===============*/
+particlesJS.load("particles-js", "js/particles-js/particles.json");

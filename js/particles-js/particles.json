@@ -1,20 +1,20 @@
 {
     "particles": {
       "number": {
-        "value": 40,
+        "value": 50,
         "density": {
           "enable": true,
           "value_area": 500
         }
       },
       "color": {
-        "value": "#FF3333"
+        "value": "#fd2424"
       },
       "shape": {
         "type": "polygon",
         "stroke": {
           "width": 2,
-          "color": "#FF3333"
+          "color": "#f74e4e"
         },
         "polygon": {
           "nb_sides": 6
@@ -29,7 +29,7 @@
         "value": 0.5,
         "random": true,
         "anim": {
-          "enable": false,
+          "enable": true,
           "speed": 1,
           "opacity_min": 0.1,
           "sync": false
@@ -48,14 +48,14 @@
       "line_linked": {
         "enable": true,
         "distance": 300,
-        "color": "#ff5722",
+        "color": "#f74e4e",
         "opacity": 0.4,
         "width": 2
       },
       "move": {
         "enable": true,
         "speed": 5,
-        "direction": "bottom",
+        "direction": "none",
         "random": true,
         "straight": false,
         "out_mode": "out",
@@ -68,7 +68,7 @@
       }
     },
     "interactivity": {
-      "detect_on": "canvas",
+      "detect_on": "window",
       "events": {
         "onhover": {
           "enable": true,
@@ -78,31 +78,31 @@
                   ]
           },
         "onclick": {
-          "enable": false,
-          "mode": "push"
+          "enable": true,
+          "mode": "repulse"
         },
         "resize": true
       },
       "modes": {
         "grab": {
-          "distance": 400,
+          "distance": 300,
           "line_linked": {
             "opacity": 0.7
           }
         },
         "bubble": {
-          "distance": 600,
+          "distance": 300,
           "size": 12,
           "duration": 1,
           "opacity": 0.8,
           "speed": 2
         },
         "repulse": {
-          "distance": 400,
+          "distance": 200,
           "duration": 0.4
         },
         "push": {
-          "particles_nb": 20
+          "particles_nb": 5
         },
         "remove": {
           "particles_nb": 10
